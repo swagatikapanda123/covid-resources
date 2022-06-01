@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DataTable from "./DataTable";
-import Input from '@material-ui/core/Input';
-import './styles.css';
+import Input from "@material-ui/core/Input";
+import "./styles.css";
 
 function DataFetching() {
   const [data, setData] = useState([]);
@@ -29,11 +29,11 @@ function DataFetching() {
   return (
     <div>
       <Input
-        className="Search"
-        type="text"
+        className='Search'
+        type='text'
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        placeholder="serch by district"
+        placeholder='search by district'
       />
       {/* <ul>
                 {posts.map(post => <li key={post.id}> {post.title} </li>)}
